@@ -1,0 +1,218 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+} 
+::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    width: 100vw;
+    height: 92px;
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 9;
+    
+    padding-left: 21px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    }
+
+h1 {
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+
+    color: #FFFFFF;
+}
+
+h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+main{
+    width: 100vw;
+    
+    margin-top: 92px;
+    padding: 31px 0 108px 0;
+    gap: 27px;
+   
+    background-color: #e5e5e5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.opcoes-menu{
+    width: 100vw;
+
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 19px 10px 19px;
+    gap: 16px; 
+
+    overflow-x: scroll;
+}
+
+.menu {
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+
+    color: #333333;
+
+    margin-bottom: 17px;
+    padding-left: 19px;
+}
+.prato, .bebidas, .sobremesa{
+    width: 172px;
+    height: 212px;
+        
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 5px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.rodape-menu{
+    width: 144px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check{
+    width: 15.44px;
+    height: 15.44px;
+
+    color: #32B72F;
+    opacity: 0;
+}
+
+div img{
+    width: 144px;
+    height: 87px;
+
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+
+.item-menu{
+    width: 144px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #333333;
+}
+
+.descricao-item-menu{
+    width: 144px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #A6A6A6;
+}
+.preco{
+    width: 144px;
+    display: flex;
+    justify-content: left;
+
+    gap: 3px;
+}
+
+.preco p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+.selecionadoPrato, .selecionadoBebidas, .selecionadoSobremesas{
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+.selecionadoPrato .check, .selecionadoBebidas .check, .selecionadoSobremesas .check {
+    opacity: 1;
+}
+
+
+footer{
+    width: 100vw;
+    height: 92px;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #FFFFFF;
+}
+
+button {
+    width: 364px;
+    height: 61px;
+    
+    background: #CBCBCB;
+    border: none;
+    border-radius: 50px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+
+    color: #FFFFFF;
+}
+.acionado{
+    font-weight: 700;
+    background: #32B72F;
+}
