@@ -211,8 +211,11 @@ button {
     letter-spacing: 0.018em;
 
     color: #FFFFFF;
+
+    pointer-events: none;
 }
 .acionado{
     font-weight: 700;
     background: #32B72F;
+    pointer-events: auto;
 }

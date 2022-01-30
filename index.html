@@ -13,6 +13,7 @@
     
     <title>Projeto 3 - DrivenEats</title>
 </head>
+
 <body>
     <header>
         <h1>DrivenEats</h1>
@@ -23,7 +24,7 @@
         <section>
             <p class="menu">Primeiro, seu prato</p>
             <div class="opcoes-menu">
-                <div class="prato">
+                <div class="prato" onclick="selecionarPrato(this,'Batata frita', 10.00)">
                     <img src="imagens/batata-frita.jpg" alt="imagem meramente ilustrativa de batatas fritas">
                     <p class="item-menu">Batata frita</p>
                     <p class="descricao-item-menu">Porção de batatas fritas</p>
@@ -35,7 +36,7 @@
                         <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
-                <div class="prato">
+                <div class="prato" onclick="selecionarPrato(this,'Mini coxinhas', 12.00)">
                     <img src="imagens/minicoxinha.jpg" alt="imagem meramente ilustrativa de coxinhas de frango">
                     <p class="item-menu">Mini coxinhas</p>
                     <p class="descricao-item-menu">Porção de mini coxinhas de frango</p>
@@ -47,7 +48,7 @@
                         <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
-                <div class="prato">
+                <div class="prato" onclick="selecionarPrato(this,'Bolinha de queijo', 9.90)">
                     <img src="imagens/Bolinha-de-queijo.jpg" alt="imagem meramente ilustrativa de bolinhas de queijo">
                     <p class="item-menu">Bolinha de queijo</p>
                     <p class="descricao-item-menu">Porção de bolinhas de queijo</p>
@@ -59,7 +60,7 @@
                         <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
-                <div class="prato">
+                <div class="prato" onclick="selecionarPrato(this,'Mini kibes', 9.75)">
                     <img src="imagens/minikibe.jpg" alt="imagem meramente ilustrativa de mini kibes">
                     <p class="item-menu">Mini kibes</p>
                     <p class="descricao-item-menu">Porção de mini kibes com catupiry</p>
@@ -77,7 +78,7 @@
         <section>
             <p class="menu">Agora, sua bebida</p>
             <div class="opcoes-menu">
-                <div class="bebidas ">
+                <div class="bebidas" onclick="selecionarBebida(this,'Suco de goiaba', 4.75)">
                     <img src="imagens/suco-goiaba.jpeg" alt="suco de goiaba">
                     <p class="item-menu">Suco de goiaba</p>
                     <p class="descricao-item-menu">Suco de goiaba bem consistente</p>
@@ -90,7 +91,7 @@
                     </div>
 
                 </div>
-                <div class="bebidas">
+                <div class="bebidas" onclick="selecionarBebida(this,'Limonada', 3.99)">
                     <img src="imagens/limonada.jpg" alt="limonada suiça">
                     <p class="item-menu">Limonada</p>
                     <p class="descricao-item-menu">Suco de limão bem refrescante</p>
@@ -102,7 +103,7 @@
                         <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
-                <div class="bebidas">
+                <div class="bebidas" onclick="selecionarBebida(this,'Coca-cola', 4.99)">
                     <img src="imagens/coca-cola.jpg" alt="lata de coca-cola">
                     <p class="item-menu">Coca-cola</p>
                     <p class="descricao-item-menu">Coca-cola bem geladinha</p>
@@ -120,7 +121,7 @@
         <section>
             <p class="menu">Por fim, sua sobremesa</p>
             <div class="opcoes-menu">
-                <div class="sobremesa">
+                <div class="sobremesa" onclick="selecionarSobremesa(this,'Bolo de pote', 5.50)">
                     <img src="imagens/bolo-de-pote.jpg" alt="bolo em potes pequenos">
                     <p class="item-menu">Bolo de pote</p>
                     <p class="descricao-item-menu">Bolinho com brigadeiro e chantilly</p>
@@ -132,7 +133,7 @@
                         <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
-                <div class="sobremesa">
+                <div class="sobremesa" onclick="selecionarSobremesa(this,'Churritos', 5.00)">
                     <img src="imagens/mini-churros.jpg" alt="mini churros">
                     <p class="item-menu">Churritos</p>
                     <p class="descricao-item-menu">Mini churros com doce de leite</p>
@@ -144,7 +145,7 @@
                         <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
-                <div class="sobremesa">
+                <div class="sobremesa" onclick="selecionarSobremesa(this,'Mini croissant', 4.80)">
                     <img src="imagens/croissant.jpeg" alt="croissant de chocolte">
                     <p class="item-menu">Mini croissant</p>
                     <p class="descricao-item-menu">Mini croissant de chocolate</p>
@@ -161,7 +162,7 @@
     </main>
 
     <footer>
-        <button class="fechar-pedido">Selecione os 3 itens <br /> para fechar o pedido</button>
+        <button class="fechar-pedido" onclick="alert('deu certo')">Selecione os 3 itens <br /> para fechar o pedido</button>
     </footer>
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
