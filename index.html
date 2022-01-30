@@ -23,49 +23,49 @@
     <main>
         <section>
             <p class="menu">Primeiro, seu prato</p>
-            <div class="opcoes-menu">
-                <div class="prato" onclick="selecionarPrato(this,'Batata frita', 10.00)">
+            <div class="opcoes-menu" data-identifier="dishes">
+                <div class="prato" onclick="selecionarPrato(this,'Batata frita', 10.00)" data-identifier="food-option">
                     <img src="imagens/batata-frita.jpg" alt="imagem meramente ilustrativa de batatas fritas">
-                    <p class="item-menu">Batata frita</p>
+                    <p class="item-menu" data-identifier="food-title">Batata frita</p>
                     <p class="descricao-item-menu">Porção de batatas fritas</p>
                     <div class="rodape-menu">
-                        <div class="preco">
+                        <div class="preco" data-identifier="food-price">
                             <p class="cifrao">R$</p>
                             <p class="valor">10,00</p>
                         </div>
                         <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
-                <div class="prato" onclick="selecionarPrato(this,'Mini coxinhas', 12.00)">
+                <div class="prato" onclick="selecionarPrato(this,'Mini coxinhas', 12.00)" data-identifier="food-option">
                     <img src="imagens/minicoxinha.jpg" alt="imagem meramente ilustrativa de coxinhas de frango">
-                    <p class="item-menu">Mini coxinhas</p>
+                    <p class="item-menu" data-identifier="food-title">Mini coxinhas</p>
                     <p class="descricao-item-menu">Porção de mini coxinhas de frango</p>
                     <div class="rodape-menu">
-                        <div class="preco">
+                        <div class="preco" data-identifier="food-price">
                             <p class="cifrao">R$</p>
                             <p class="valor">12,00</p>
                         </div>
                         <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
-                <div class="prato" onclick="selecionarPrato(this,'Bolinha de queijo', 9.90)">
+                <div class="prato" onclick="selecionarPrato(this,'Bolinha de queijo', 9.90)" data-identifier="food-option">
                     <img src="imagens/Bolinha-de-queijo.jpg" alt="imagem meramente ilustrativa de bolinhas de queijo">
-                    <p class="item-menu">Bolinha de queijo</p>
+                    <p class="item-menu" data-identifier="food-title">Bolinha de queijo</p>
                     <p class="descricao-item-menu">Porção de bolinhas de queijo</p>
                     <div class="rodape-menu">
-                        <div class="preco">
+                        <div class="preco" data-identifier="food-price">
                             <p class="cifrao">R$</p>
                             <p class="valor">9,90</p>
                         </div>
                         <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
-                <div class="prato" onclick="selecionarPrato(this,'Mini kibes', 9.75)">
+                <div class="prato" onclick="selecionarPrato(this,'Mini kibes', 9.75)" data-identifier="food-option">
                     <img src="imagens/minikibe.jpg" alt="imagem meramente ilustrativa de mini kibes">
-                    <p class="item-menu">Mini kibes</p>
+                    <p class="item-menu" data-identifier="food-title">Mini kibes</p>
                     <p class="descricao-item-menu">Porção de mini kibes com catupiry</p>
                     <div class="rodape-menu">
-                        <div class="preco">
+                        <div class="preco" data-identifier="food-price">
                             <p class="cifrao">R$</p>
                             <p class="valor">9,75</p>
                         </div>
@@ -77,13 +77,13 @@
 
         <section>
             <p class="menu">Agora, sua bebida</p>
-            <div class="opcoes-menu">
-                <div class="bebidas" onclick="selecionarBebida(this,'Suco de goiaba', 4.75)">
+            <div class="opcoes-menu" data-identifier="drinks">
+                <div class="bebidas" onclick="selecionarBebida(this,'Suco de goiaba', 4.75)" data-identifier="food-option">
                     <img src="imagens/suco-goiaba.jpeg" alt="suco de goiaba">
-                    <p class="item-menu">Suco de goiaba</p>
+                    <p class="item-menu" data-identifier="food-title">Suco de goiaba</p>
                     <p class="descricao-item-menu">Suco de goiaba bem consistente</p>
                     <div class="rodape-menu">
-                        <div class="preco">
+                        <div class="preco" data-identifier="food-price">
                             <p class="cifrao">R$</p>
                             <p class="valor">4,75</p>
                         </div>
@@ -91,24 +91,24 @@
                     </div>
 
                 </div>
-                <div class="bebidas" onclick="selecionarBebida(this,'Limonada', 3.99)">
+                <div class="bebidas" onclick="selecionarBebida(this,'Limonada', 3.99)" data-identifier="food-option">
                     <img src="imagens/limonada.jpg" alt="limonada suiça">
-                    <p class="item-menu">Limonada</p>
+                    <p class="item-menu" data-identifier="food-title">Limonada</p>
                     <p class="descricao-item-menu">Suco de limão bem refrescante</p>
                     <div class="rodape-menu">
-                        <div class="preco">
+                        <div class="preco" data-identifier="food-price">
                             <p class="cifrao">R$</p>
                             <p class="valor">3,99</p>
                         </div>
                         <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
-                <div class="bebidas" onclick="selecionarBebida(this,'Coca-cola', 4.99)">
+                <div class="bebidas" onclick="selecionarBebida(this,'Coca-cola', 4.99)" data-identifier="food-option">
                     <img src="imagens/coca-cola.jpg" alt="lata de coca-cola">
-                    <p class="item-menu">Coca-cola</p>
+                    <p class="item-menu" data-identifier="food-title">Coca-cola</p>
                     <p class="descricao-item-menu">Coca-cola bem geladinha</p>
                     <div class="rodape-menu">
-                        <div class="preco">
+                        <div class="preco" data-identifier="food-price">
                             <p class="cifrao">R$</p>
                             <p class="valor">4,99</p>
                         </div>
@@ -120,37 +120,37 @@
 
         <section>
             <p class="menu">Por fim, sua sobremesa</p>
-            <div class="opcoes-menu">
-                <div class="sobremesa" onclick="selecionarSobremesa(this,'Bolo de pote', 5.50)">
+            <div class="opcoes-menu" data-identifier="desserts">
+                <div class="sobremesa" onclick="selecionarSobremesa(this,'Bolo de pote', 5.50)" data-identifier="food-option">
                     <img src="imagens/bolo-de-pote.jpg" alt="bolo em potes pequenos">
-                    <p class="item-menu">Bolo de pote</p>
+                    <p class="item-menu" data-identifier="food-title">Bolo de pote</p>
                     <p class="descricao-item-menu">Bolinho com brigadeiro e chantilly</p>
                     <div class="rodape-menu">
-                        <div class="preco">
+                        <div class="preco" data-identifier="food-price">
                             <p class="cifrao">R$</p>
                             <p class="valor">5,50</p>
                         </div>
                         <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
-                <div class="sobremesa" onclick="selecionarSobremesa(this,'Churritos', 5.00)">
+                <div class="sobremesa" onclick="selecionarSobremesa(this,'Churritos', 5.00)" data-identifier="food-option">
                     <img src="imagens/mini-churros.jpg" alt="mini churros">
-                    <p class="item-menu">Churritos</p>
+                    <p class="item-menu" data-identifier="food-title">Churritos</p>
                     <p class="descricao-item-menu">Mini churros com doce de leite</p>
                     <div class="rodape-menu">
-                        <div class="preco">
+                        <div class="preco" data-identifier="food-price">
                             <p class="cifrao">R$</p>
                             <p class="valor">5,00</p>
                         </div>
                         <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
-                <div class="sobremesa" onclick="selecionarSobremesa(this,'Mini croissant', 4.80)">
+                <div class="sobremesa" onclick="selecionarSobremesa(this,'Mini croissant', 4.80)" data-identifier="food-option">
                     <img src="imagens/croissant.jpeg" alt="croissant de chocolte">
-                    <p class="item-menu">Mini croissant</p>
+                    <p class="item-menu" data-identifier="food-title">Mini croissant</p>
                     <p class="descricao-item-menu">Mini croissant de chocolate</p>
                     <div class="rodape-menu">
-                        <div class="preco">
+                        <div class="preco" data-identifier="food-price">
                             <p class="cifrao">R$</p>
                             <p class="valor">4,80</p>
                         </div>
@@ -162,8 +162,36 @@
     </main>
 
     <footer>
-        <button class="fechar-pedido" onclick="alert('deu certo')">Selecione os 3 itens <br /> para fechar o pedido</button>
+        <button class="fechar-pedido" onclick="informarDadosDeUsuario()">Selecione os 3 itens <br /> para fechar o pedido</button>
     </footer>
+
+    <div class="sobreposicao escondido">
+        <div class="confirmar-pedido">
+            <div class="titulo">Confirme seu pedido</div>
+            <div class="pedidos">
+                <div class="pedido-prato">
+                    <p class="nome">prato</p>
+                    <p class="preco">preço</p>
+                </div>
+                <div class="pedido-bebida">
+                    <p class="nome">bebida</p>
+                    <p class="preco">preço</p>
+                </div>
+                <div class="pedido-sobremesa">
+                    <p class="nome">sobremesa</p>
+                    <p class="preco">preço</p>
+                </div>
+                <div class="total">
+                    <div>TOTAL</div>
+                    <div class="preco">preço</div>
+                </div>
+            </div>
+        
+            <button class="confirmar" onclick="enviarPedido()">Tudo certo, pode pedir!</button>
+            <p class="cancelar" onclick="cancelarPedido()">Cancelar</p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

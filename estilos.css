@@ -194,7 +194,7 @@ footer{
     background: #FFFFFF;
 }
 
-button {
+.fechar-pedido{
     width: 364px;
     height: 61px;
     
@@ -218,4 +218,94 @@ button {
     font-weight: 700;
     background: #32B72F;
     pointer-events: auto;
+}
+.sobreposicao {
+    width: 100vw;
+    height: 100vh;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+}
+.confirmar-pedido{
+    max-width: 377px;
+    width: 90%;
+    height: 353px;
+    padding: 20px 0 16px 0;
+   
+    background-color: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: normal;
+    color: #FFFFFF;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pedidos{
+    width: 100%;
+    padding: 25px;
+    gap:13px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.pedidos .preco{
+    width: auto;
+    text-align:end;
+
+}
+.titulo, .total{
+    font-style: normal;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+}
+.pedido-prato, .pedido-bebida, .pedido-sobremesa, .total{
+    width: 325px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.confirmar{
+    width: 320px;
+    height: 52px;
+
+    background-color: #FFFFFF;
+    color: #50D074;
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.78px;
+    letter-spacing: 1.8%;
+
+    border-radius: 100px;
+    border: none;
+}
+.cancelar{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.44px;
+    letter-spacing: 1.8%;
+}
+.escondido{
+    display: none;
 }

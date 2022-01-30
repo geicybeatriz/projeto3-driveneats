@@ -9,7 +9,10 @@ let estaSelecionadoSobremesa = false;
 let valorPrato=0;
 let valorBebida=0;
 let valorSobremesa=0;
-let valorTotal=0;
+let total=0;
+
+let nomeUsuario = " ";
+let enderecoUsuario = " ";
 
 
 function selecionarPrato(prato, itemMenu, valor) {
@@ -61,3 +64,51 @@ function verificarPedido(){
         botao.innerHTML = "Fechar pedido";
     }
 }
+
+function informarDadosDeUsuario(){
+    nomeUsuario = prompt('Por favor, digite o teu nome:');
+    enderecoUsuario = prompt('Por favor, informe o endereço para entrega:');
+    confirmarPedido();
+}
+function confirmarPedido() {
+    const modal = document.querySelector(".sobreposicao");
+    modal.classList.remove("escondido");
+
+    const pratoEscolhido = document.querySelector(".pedido-prato .nome");
+    pratoEscolhido.innerHTML = nomePrato;
+
+    const bebidaEscolhida = document.querySelector(".pedido-bebida .nome");
+    bebidaEscolhida.innerHTML = nomeBebida;
+    
+    const sobremesaEscolhida = document.querySelector(".pedido-sobremesa .nome");
+    sobremesaEscolhida.innerHTML = nomeSobremesa;
+
+   
+    const precoPratoEscolhido = document.querySelector(".pedido-prato .preco");
+    precoPratoEscolhido.innerHTML = (valorPrato.toFixed(2)).replace('.',',');
+    const precoBebidaEscolhida = document.querySelector(".pedido-bebida .preco");
+    precoBebidaEscolhida.innerHTML = (valorBebida.toFixed(2)).replace('.',',');
+    const precoSobremesaEscolhida = document.querySelector(".pedido-sobremesa .preco");
+    precoSobremesaEscolhida.innerHTML = (valorSobremesa.toFixed(2)).replace('.',',');
+    
+    total = valorPrato + valorBebida + valorSobremesa;
+    const valorTotal = document.querySelector(".pedidos .total .preco");
+    valorTotal.innerHTML = `R$ ${(total.toFixed(2)).replace('.',',')}`;
+    
+    
+}
+function cancelarPedido(){
+    const modal = document.querySelector(".sobreposicao");
+    modal.classList.add("escondido");
+}
+
+function enviarPedido(){
+    const telefoneRestaurante = 5569993756164;
+    const mensagemPronta = (`Olá, gostaria de fazer o pedido: \n- Prato: ${nomePrato} \n- Bebida: ${nomeBebida} \n- Sobremesa: ${nomeSobremesa} \nTotal: R$ ${(total.toFixed(2)).replace('.',',')} \n \n Nome: ${nomeUsuario} \n Endereço: ${enderecoUsuario}`);
+    const mensagem = encodeURIComponent(mensagemPronta);
+
+    const urlWhatsapp = `https://wa.me/${telefoneRestaurante}?text=${mensagem}`;
+    const abrirZap = window.open(urlWhatsapp);
+    abrirZap.focus();
+}
+
